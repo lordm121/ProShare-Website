@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <link rel="icon" href="" type="image/x-icon" />
+  <link rel="shortcut icon" href="" type="image/x-icon">
+  <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Website",
+        "url": ""
+        }
+        </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="og:description" content="ProShare is a partner bot">
+  <meta name="keywords" content="Discord Bot,ProShare">
+  <meta name="author" content="Lord Developer">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="google-site-verification" content="n4EDMzCUL1z8VD5ramEsEHcRPPjfzHSsDYVFdpH4KYM" />
+  <meta name="twitter:image" content="">
+  <link rel="canoical" href="">
+
+
+  <meta name="googlebot" content="index">
+  <meta name="googlebot-news" content="snippet">
+
+ <meta name="theme-color" content="#2596be">
+        
+
+  <link href="https://pro.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
+
+  <!-- DATA TABLES -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="//cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css" />
+  <!-- JQUERY -->
+
+  <!-- GOOGLE -->
+  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+  <!-- CHOICES JS -->
+  <link rel="stylesheet"
+    href="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569006288/BBBootstrap/choices.min.css?version=7.0.0">
+  <script
+    src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569006273/BBBootstrap/choices.min.js?version=7.0.0"></script>
+  <!--- tailwind css--->
+
+  <!-- SWEET ALERT -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+  <!-- bootstrap -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--- csss-->
+  <link rel="stylesheet" href="./css/lord.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <nav class="bg-gray-800">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button"
+            class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white menu-btn"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open maimenu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Heroicon name: outline/bars-3
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Heroicon name: outline/x-mark
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex flex-shrink-0 items-center">
+
+            <h1 class="text-light font-semibold  "><span class="text-info">Pro</span> Share</h1>
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium"
+                aria-current="page">Dashboard</a>
+
+              <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+
+              <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"></a>
+
+              <a href="#"
+                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"></a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <button type="button"
+            class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+            <span class="sr-only">View notifications</span>
+            <!-- Heroicon name: outline/bell -->
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+            </svg>
+          </button>
+
+          <!-- Profile dropdown -->
+          <!--
+          <div class="relative ml-3">
+            <div>
+              <button type="button" class="flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                <span class="sr-only">Open user menu</span>
+              
+                <img class="h-8 w-8 imgbtn rounded-full" src="./img/logo.jpg" alt="<%=  account.displayName%>">
+
+              </button>
+            </div>-->
+
+          <!--
+              Dropdown menu, show/hide based on menu state.
+  
+              Entering: "transition ease-out duration-100"
+                From: "transform opacity-0 scale-95"
+                To: "transform opacity-100 scale-100"
+              Leaving: "transition ease-in duration-75"
+                From: "transform opacity-100 scale-100"
+                To: "transform opacity-0 scale-95"
+            -->
+          <div
+            class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 hidden focus:outline-none profile-menu"
+            role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+            <!-- Active: "bg-gray-100", Not Active: "" -->
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+              id="user-menu-item-0">Your Profile</a>
+            <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+              id="user-menu-item-1">Settings</a>
+
+            <a href="/auth/google" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1"
+              id="user-menu-item-2">Sign in</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pt-2 pb-3">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="/dashboard" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+          aria-current="page">Dashboard</a>
+
+        <a href="/team"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
+        <a href="/contact"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contacts</a>
+
+        <a href="/menu"
+          class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"></a>
+      </div>
+    </div>
+  </nav>
+  <section class="bg-dark text-light text-center py-5">
+
+    <div class="container">
+      <div class="display:inline-flex;">
+        <div>
+          <h1 class="font-semibold text-4xl"><span class="text-info">Pro</span> Share</h1>
+          <p>
+            Hi there partner bot is an automatically share your server to another server
+          </p>
+          <a class="btn btn-info" href="">Invite Bot</a>
+          <a class="m-2 btn btn-light" href="">Support Server</a>
+        </div>
+
+
+
+
+
+
+        <img class="img-fluid w-50" src="./img/proshare.svg" alt="">
+      </div>
+
+
+    </div>
+  </section>
+  <!------------features-->
+  <section id="Features" class="py-5 bg-gray-100">
+    <h2 class="text-center font-semibold font-medium  text-2xl">
+      Features
+    </h2>
+    <div class="container">
+
+      <div class="row text-center">
+        <div class="col-sm">
+          <div class="card bg-dark text-light mb-3">
+            <div class="h1 mt-3">
+              <i class="bi bi-clock-history"></i>
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-info">Easy to Use</h4>
+              <p class="card-text">use easy all commands are simple with information.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card bg-dark text-light mb-3">
+            <div class="h1 mt-3">
+              <i class="bi bi-capslock-fill"></i>
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-info">24/7.</h4>
+              <p>the ProShare online 24 hours in day               
+            
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card bg-dark text-light mb-3">
+            <div class="h1 mt-3">
+              <i class="bi bi-folder2-open"></i>
+            </div>
+            <div class="card-body text-center">
+              <h4 class="card-title text-info">Support</h4>
+              <p class="card-text">we will help you for fixing your problem in support server.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="Statics" class="py-5 bg-dark text-light">
+    <h2 class="text-center text-4xl">Statics:</h2>
+    <div class="container">
+      <div class="py-2 text-center">
+
+      </div>
+      <div class="row align-items-center justify-content-center text-center -5">
+        <div class="row">
+          <img src="./img/statics.svg" alt="" class="h-60 w-auto img-fluid d-none d-md-block">
+        </div>
+        <div class="col-sm p-5 h1">
+          <i class="bi bi-hdd-stack text-primary"></i>
+          <h5>100 < </h5>
+              <h5>Server</h5>
+        </div>
+        <div class="col-sm p-5 h1">
+          <i class="bi bi bi-people-fill text-primary"></i>
+          <h5>1000+</h5>
+          <h5>Users</h5>
+        </div>
+        <div class="col-sm p-5 h1">
+          <i class="bi bi bi-hash text-primary"></i>
+          <h5>100+</h5>
+          <h5>Channels</h5>
+        </div>
+        
+        <div class="col-sm  h1 text-center">
+        <a href="https://top.gg/bot/638769838747287568">
+  <img src="https://top.gg/api/widget/638769838747287568.svg">
+</a></div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+  <div class="footer-clean bg-dark text-light">
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-sm-4 col-md-3 item  text-center py-3">
+            <h3 class="text-info text-xl underline whitespace-nowrap hover:text-indigo-900">Quick access</h3>
+            <ul>
+              <li><a href="#Features">Features</a></li>
+              <li><a href="#Statics">Statics</a></li>
+              <li><a href="#FAQ">Ask me</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-3 item text-center py-3">
+            <h3 class="text-info text-xl underline hover:text-indigo-900">About</h3>
+            <ul>
+              <li><a href="./pages/commands.html">Commands</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">License</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-4 col-md-3 item  text-center py-3">
+            <h3 class="text-info text-xl underline hover:text-indigo-900">Links</h3>
+            <ul>
+              <li><a href="#">Support server</a></li>
+              <li><a href="#">Invite bot</a></li>
+              <li><a href="#">Github</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 item social text-light text-center">
+            <a href="#"><ion-icon name="logo-discord" role="img" class="md hydrated"
+                aria-label="logo discord"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-facebook" role="img" class="md hydrated"
+                aria-label="logo facebook"></ion-icon></a><a href="#"><ion-icon name="logo-twitter" role="img"
+                class="md hydrated" aria-label="logo twitter"></ion-icon></a><a href="#"><ion-icon name="logo-instagram"
+                role="img" class="md hydrated" aria-label="logo instagram"></ion-icon></a>
+            <p class="copyright">ProShare Bot © 2022</p>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer font-small text-light mt-5">
+        <div class="footer-copyright text-center">Made with 💖 by
+          <a href="https://github.com/lordm121/">Lord Is One</a>
+          © 2022 Copyright
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const menumobile = document.querySelector("#mobile-menu");
+    const menubtn = document.querySelector(".menu-btn");
+    menubtn.addEventListener("click", () => {
+      if (menumobile.classList.contains("hidden")) {
+        menumobile.classList.remove("hidden");
+
+      } else {
+        menumobile.classList.add("hidden")
+      }
+    });
+    const menu = document.querySelector(".profile-menu")
+    const imgbtn = document.querySelector(".imgbtn")
+    imgbtn.addEventListener("click", () => {
+      if (menu.classList.contains("hidden")) {
+        menu.classList.remove("hidden")
+      }
+      else {
+        menu.classList.add("hidden")
+      }
+
+    })
+  </script>
+</body>
+
+</html>
